@@ -1,0 +1,33 @@
+# === Node / Backend ===
+node_modules/
+npm-debug.log*
+.env
+.DS_Store
+
+# === Frontend build files ===
+frontend/node_modules/
+frontend/build/
+frontend/dist/
+
+# === Logs ===
+logs/
+*.log
+yarn-debug.log*
+yarn-error.log*
+
+# === System files ===
+Thumbs.db
+*.swp
+
+# === Ignore temporary data ===
+.cache/
+.tmp/
+
+# === Keep frontend tracked ===
+!frontend/
+!frontend/src/
+!frontend/public/
+!frontend/package.json
+!frontend/tailwind.config.js
+!frontend/postcss.config.js
+!frontend/README.md

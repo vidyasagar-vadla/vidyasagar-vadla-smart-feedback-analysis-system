@@ -1,0 +1,6 @@
+DB_HOST=localhost
+DB_USER=root
+DB_PASS=Vidyasagar2005@
+DB_NAME=feedback_system
+JWT_SECRET=supersecretjwtkey
+PORT=5000
