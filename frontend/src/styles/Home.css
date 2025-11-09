@@ -1,0 +1,110 @@
+/* src/styles/Home.css */
+
+/* Container */
+.home-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  background: #ffffff;
+  font-family: "Poppins", sans-serif;
+}
+
+/* Card Section */
+.home-content {
+  text-align: center;
+  background: #ffffff;
+  padding: 50px 60px;
+  border-radius: 16px;
+  border: 1px solid #e5e7eb;
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.05);
+  max-width: 600px;
+  width: 90%;
+}
+
+/* Badge */
+.home-badge {
+  display: inline-block;
+  background: #2563eb;
+  color: #fff;
+  padding: 6px 14px;
+  border-radius: 12px;
+  font-size: 14px;
+  letter-spacing: 0.4px;
+  margin-bottom: 16px;
+}
+
+/* Titles */
+.home-title {
+  font-size: 2rem;
+  color: #1e3a8a;
+  margin-bottom: 10px;
+  font-weight: 600;
+}
+
+.home-subtitle {
+  font-size: 1rem;
+  color: #555;
+  margin-bottom: 32px;
+  line-height: 1.6;
+}
+
+/* Buttons Container */
+.home-buttons {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+/* Buttons */
+.home-btn-primary,
+.home-btn-secondary {
+  border: none;
+  padding: 12px 18px;
+  border-radius: 10px;
+  font-size: 16px;
+  font-weight: 500;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  text-decoration: none;
+  display: inline-block;
+}
+
+/* Primary Button */
+.home-btn-primary {
+  background: #2563eb;
+  color: white;
+  box-shadow: 0 4px 8px rgba(37, 99, 235, 0.3);
+}
+
+.home-btn-primary:hover {
+  background: #1d4ed8;
+  transform: translateY(-2px);
+}
+
+/* Secondary Button */
+.home-btn-secondary {
+  background: #f9fafb;
+  color: #1e3a8a;
+  border: 1px solid #cbd5e1;
+}
+
+.home-btn-secondary:hover {
+  background: #f1f5f9;
+  transform: translateY(-2px);
+}
+
+/* Responsive */
+@media (max-width: 600px) {
+  .home-content {
+    padding: 30px 25px;
+  }
+
+  .home-title {
+    font-size: 1.6rem;
+  }
+
+  .home-subtitle {
+    font-size: 0.95rem;
+  }
+}

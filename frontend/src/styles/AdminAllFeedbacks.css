@@ -1,0 +1,131 @@
+/* src/styles/AdminAllFeedbacks.css */
+
+/* Overall Layout */
+.admin-feedback-container {
+  min-height: 100vh;
+  background: #ffffff;
+  font-family: "Poppins", sans-serif;
+  padding: 50px 20px;
+  color: #333;
+}
+
+/* Header Section */
+.admin-feedback-header {
+  text-align: center;
+  margin-bottom: 40px;
+}
+
+.admin-feedback-title {
+  font-size: 2rem;
+  color: #1e3a8a;
+  font-weight: 600;
+  margin-bottom: 8px;
+}
+
+.admin-feedback-count {
+  color: #6b7280;
+  font-size: 1rem;
+}
+
+/* Table Wrapper */
+.feedback-table-wrapper {
+  overflow-x: auto;
+  background: #ffffff;
+  border-radius: 12px;
+  border: 1px solid #e5e7eb;
+  padding: 20px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+}
+
+/* Table Styles */
+.feedback-table {
+  width: 100%;
+  border-collapse: collapse;
+  text-align: left;
+}
+
+.feedback-table thead {
+  background: #f1f5f9;
+  color: #1e293b;
+}
+
+.feedback-table th,
+.feedback-table td {
+  padding: 12px 16px;
+  border-bottom: 1px solid #e5e7eb;
+  vertical-align: middle;
+}
+
+/* Center the first column */
+.feedback-table th:first-child,
+.feedback-table td:first-child {
+  text-align: center;
+}
+
+/* Hover Effect – subtle only */
+.feedback-table tbody tr:hover {
+  background: #f9fafb;
+  transition: background 0.2s ease;
+}
+
+/* ✅ Sentiment Colors — only affect text, not the background */
+.sentiment-positive {
+  color: #16a34a;
+  font-weight: 600;
+  background: none !important;
+}
+
+.sentiment-neutral {
+  color: #eab308;
+  font-weight: 600;
+  background: none !important;
+}
+
+.sentiment-negative {
+  color: #dc2626;
+  font-weight: 600;
+  background: none !important;
+}
+
+/* Delete Button */
+.delete-btn {
+  background: #fff;
+  border: 1px solid #fca5a5;
+  color: #dc2626;
+  padding: 6px 10px;
+  border-radius: 8px;
+  font-size: 14px;
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.delete-btn:hover {
+  background: #fee2e2;
+}
+
+.delete-btn:disabled {
+  opacity: 0.6;
+  cursor: not-allowed;
+}
+
+.delete-btn svg {
+  width: 16px;
+  height: 16px;
+}
+
+/* Empty State */
+.empty-state {
+  text-align: center;
+  color: #6b7280;
+  padding: 80px 0;
+}
+
+.empty-state svg {
+  width: 60px;
+  height: 60px;
+  stroke: #9ca3af;
+  margin-bottom: 10px;
+}

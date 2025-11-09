@@ -1,0 +1,121 @@
+/* src/styles/AnalyticsCharts.css */
+
+/* --- Scrollable Container --- */
+.analytics-scroll-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 35px;
+  padding: 40px 20px;
+  background: #ffffff;
+  max-height: 85vh; /* 🔹 vertical scroll area */
+  overflow-y: auto;
+  scroll-behavior: smooth;
+  font-family: "Poppins", sans-serif;
+}
+
+/* --- Chart Card (base style) --- */
+.chart-card {
+  background: #ffffff;
+  border: 2px solid #e5e7eb;
+  border-radius: 20px;
+  box-shadow: 0 8px 22px rgba(0, 0, 0, 0.06);
+  padding: 24px;
+  width: 100%;
+  max-width: 500px;
+  height: 500px; /* perfect square */
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  transition: all 0.3s ease;
+}
+
+/* --- Hover Effect --- */
+.chart-card:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 10px 24px rgba(0, 0, 0, 0.08);
+}
+
+/* --- Sentiment Variants --- */
+.chart-card.positive {
+  border-color: #16a34a; /* green border */
+  box-shadow: 0 4px 18px rgba(22, 163, 74, 0.15);
+}
+.chart-card.positive .chart-title {
+  color: #16a34a;
+}
+
+.chart-card.neutral {
+  border-color: #eab308; /* yellow border */
+  box-shadow: 0 4px 18px rgba(234, 179, 8, 0.15);
+}
+.chart-card.neutral .chart-title {
+  color: #ca8a04;
+}
+
+.chart-card.negative {
+  border-color: #dc2626; /* red border */
+  box-shadow: 0 4px 18px rgba(220, 38, 38, 0.15);
+}
+.chart-card.negative .chart-title {
+  color: #dc2626;
+}
+
+/* --- Chart Title --- */
+.chart-title {
+  font-size: 1.25rem;
+  font-weight: 600;
+  color: #4338ca;
+  text-align: center;
+  margin-bottom: 10px;
+  transition: color 0.3s ease;
+}
+
+/* --- Chart Wrapper (square chart area) --- */
+.chart-wrapper {
+  position: relative;
+  width: 100%;
+  flex: 1;
+  aspect-ratio: 1 / 1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.chart-wrapper canvas {
+  width: 100% !important;
+  height: 100% !important;
+}
+
+/* --- Scrollbar Styling --- */
+.analytics-scroll-container::-webkit-scrollbar {
+  width: 8px;
+}
+
+.analytics-scroll-container::-webkit-scrollbar-thumb {
+  background: #cbd5e1;
+  border-radius: 10px;
+}
+
+.analytics-scroll-container::-webkit-scrollbar-thumb:hover {
+  background: #a5b4fc;
+}
+
+/* --- Responsive --- */
+@media (max-width: 768px) {
+  .chart-card {
+    max-width: 95%;
+    height: 400px;
+  }
+}
+
+@media (max-width: 480px) {
+  .chart-card {
+    height: 360px;
+  }
+
+  .chart-title {
+    font-size: 1rem;
+  }
+}

@@ -1,0 +1,14 @@
+/* /src/App.css — WHITE BASE */
+html, body, #root, .App {
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  min-height: 100vh;
+  background: #ffffff;      /* ← white app background */
+  color: #0f172a;           /* slate-900 for strong readability */
+  font-family: "Inter", system-ui, -apple-system, Segoe UI, Roboto, sans-serif;
+}
+
+/* Optional: smooth scroll + text rendering */
+html { scroll-behavior: smooth; }
+body { -webkit-font-smoothing: antialiased; -moz-osx-font-smoothing: grayscale; }

@@ -1,0 +1,120 @@
+/* src/styles/AdminHome.css */
+
+/* Page Container */
+.admin-home {
+  min-height: 100vh;
+  background: #ffffff;
+  font-family: "Poppins", sans-serif;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 50px 20px;
+  color: #333;
+}
+
+/* Inner Container */
+.admin-home-container {
+  text-align: center;
+  max-width: 900px;
+  width: 100%;
+  background: #ffffff;
+  border: 1px solid #e5e7eb;
+  border-radius: 16px;
+  padding: 50px 40px;
+  box-shadow: 0 6px 18px rgba(0, 0, 0, 0.05);
+}
+
+/* Title */
+.admin-home-title {
+  font-size: 2rem;
+  font-weight: 600;
+  color: #1e3a8a; /* Deep Blue */
+  margin-bottom: 40px;
+}
+
+/* Grid */
+.admin-home-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 25px;
+  margin-bottom: 40px;
+}
+
+/* Cards */
+.admin-home-card {
+  text-decoration: none;
+  background: #ffffff;
+  border: 1px solid #e5e7eb;
+  border-radius: 14px;
+  padding: 30px 20px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+  color: #1f2937;
+  transition: all 0.3s ease;
+}
+
+.admin-home-card:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 8px 18px rgba(0, 0, 0, 0.1);
+}
+
+/* Card Icon */
+.admin-home-icon {
+  font-size: 2.5rem;
+  margin-bottom: 10px;
+}
+
+/* Card Text */
+.admin-home-card h3 {
+  font-size: 1.3rem;
+  font-weight: 600;
+  margin-bottom: 5px;
+}
+
+.admin-home-card p {
+  color: #6b7280;
+  font-size: 0.95rem;
+}
+
+/* Color Themes */
+.admin-home-card.red {
+  border-left: 6px solid #ef4444;
+}
+
+.admin-home-card.red:hover {
+  box-shadow: 0 8px 18px rgba(239, 68, 68, 0.15);
+}
+
+.admin-home-card.purple {
+  border-left: 6px solid #7e22ce;
+}
+
+.admin-home-card.purple:hover {
+  box-shadow: 0 8px 18px rgba(126, 34, 206, 0.15);
+}
+
+/* Footer */
+.admin-home-footer {
+  margin-top: 10px;
+  font-size: 1rem;
+  color: #6b7280;
+  font-style: italic;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .admin-home-container {
+    padding: 30px 20px;
+  }
+
+  .admin-home-title {
+    font-size: 1.6rem;
+  }
+
+  .admin-home-card {
+    padding: 25px 15px;
+  }
+
+  .admin-home-icon {
+    font-size: 2rem;
+  }
+}

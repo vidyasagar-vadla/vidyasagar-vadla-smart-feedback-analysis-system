@@ -1,0 +1,120 @@
+/* 🌈 Navbar Container */
+.navbar {
+  background: #1d4ed8;
+  color: white;
+  padding: 15px 40px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  box-shadow: 0 6px 20px -4px rgba(59, 130, 246, 0.4);
+  position: sticky;
+  top: 0;
+  z-index: 50;
+  animation: fadeDown 0.6s ease-out;
+  backdrop-filter: blur(8px);
+}
+
+/* 🧠 Brand Name / Logo */
+.navbar-brand {
+  font-size: 1.5rem;
+  font-weight: 800;
+  text-decoration: none;
+  color: white;
+  transition: all 0.3s ease;
+}
+
+.navbar-brand:hover {
+  text-shadow: 0 2px 10px rgba(255, 255, 255, 0.6);
+  transform: scale(1.05);
+}
+
+/* 🔗 Navigation Links Container */
+.navbar-links {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+
+/* 🌟 Individual Links */
+.navbar-link {
+  color: white;
+  text-decoration: none;
+  font-weight: 500;
+  transition: all 0.3s ease;
+  padding: 6px 12px;
+  border-radius: 8px;
+}
+
+.navbar-link:hover {
+  background: rgba(255, 255, 255, 0.15);
+  transform: translateY(-1px);
+}
+
+/* 🚪 Logout Button */
+.navbar-btn {
+  background: white;
+  color: hsl(221, 83%, 53%);
+  font-weight: 600;
+  border: none;
+  border-radius: 8px;
+  padding: 6px 14px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  box-shadow: 0 2px 6px -2px rgba(0, 0, 0, 0.1);
+}
+
+.navbar-btn:hover {
+  background: hsl(221, 83%, 97%);
+  box-shadow: 0 6px 20px -4px rgba(59, 130, 246, 0.3);
+  transform: translateY(-1px);
+}
+
+/* 📊 Visualize Button (only visible when logged in) */
+.visualize-btn {
+  background: white;
+  color: hsl(221, 83%, 53%);
+  font-weight: 700;
+  border-radius: 8px;
+  padding: 6px 14px;
+  text-decoration: none;
+  transition: all 0.3s ease;
+  box-shadow: 0 3px 8px -3px rgba(59, 130, 246, 0.4);
+}
+
+.visualize-btn:hover {
+  background: hsl(221, 83%, 97%);
+  transform: translateY(-1px);
+  box-shadow: 0 8px 25px -6px rgba(59, 130, 246, 0.5);
+}
+
+/* 📱 Mobile Responsive */
+@media (max-width: 768px) {
+  .navbar {
+    flex-direction: column;
+    gap: 12px;
+    padding: 15px 20px;
+  }
+
+  .navbar-links {
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 12px;
+  }
+
+  .navbar-btn,
+  .visualize-btn {
+    padding: 8px 16px;
+  }
+}
+
+/* ✨ Entry Animation */
+@keyframes fadeDown {
+  from {
+    opacity: 0;
+    transform: translateY(-15px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}

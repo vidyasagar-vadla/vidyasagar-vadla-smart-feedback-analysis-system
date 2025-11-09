@@ -1,0 +1,88 @@
+/* src/styles/AdminDashboard.css */
+
+/* Base Layout */
+.admin-dashboard {
+  min-height: 100vh;
+  background: #ffffff;
+  font-family: "Poppins", sans-serif;
+  padding: 50px 20px;
+  color: #333;
+}
+
+/* Container */
+.admin-dashboard-container {
+  max-width: 1100px;
+  margin: 0 auto;
+  background: #ffffff;
+  border: 1px solid #e5e7eb;
+  border-radius: 14px;
+  box-shadow: 0 6px 18px rgba(0, 0, 0, 0.05);
+  padding: 40px 30px;
+  text-align: center;
+}
+
+/* Title */
+.admin-dashboard-title {
+  font-size: 2rem;
+  color: #1e3a8a; /* Indigo Blue */
+  font-weight: 600;
+  margin-bottom: 40px;
+  text-align: center;
+}
+
+/* Analytics Section */
+.analytics-section {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.analytics-card {
+  width: 100%;
+  background: #ffffff;
+  border: 1px solid #e5e7eb;
+  border-left: 6px solid #2563eb; /* Blue accent bar */
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(37, 99, 235, 0.08);
+  padding: 30px;
+  transition: all 0.3s ease;
+}
+
+.analytics-card:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 6px 18px rgba(37, 99, 235, 0.15);
+}
+
+/* Chart Container */
+.analytics-chart-container {
+  width: 100%;
+  height: auto;
+}
+
+/* Footer */
+.analytics-footer {
+  margin-top: 20px;
+  font-size: 1rem;
+  color: #6b7280;
+  text-align: center;
+  font-style: italic;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .admin-dashboard-container {
+    padding: 25px 15px;
+  }
+
+  .admin-dashboard-title {
+    font-size: 1.6rem;
+  }
+
+  .analytics-card {
+    padding: 20px;
+  }
+
+  .analytics-footer {
+    font-size: 0.9rem;
+  }
+}
